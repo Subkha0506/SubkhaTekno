@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<title>My Portofolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+<script src="scripr2.js"></script>
+
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  
+  <div class="w3-row-padding">
+  
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="ska.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Muhammad Subkha</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Programer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Jakarta Selatan</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mhmd@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>082249612676</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Keahlian</b></p>
+          <p>Design Web</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Design Aplikasi</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Photograph</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Editor</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Bahasa</b></p>
+          <p>Indonesia</p>
+          
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"><center>90%</center></div>
+          </div>
+          <p>english</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"><center>55%</center></div>
+          </div>
+          <p>Jawa</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"><center>25%</center></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+      <?php
+    if ($result->num_rows > 0) {
+        // Loop melalui hasil dan menampilkannya
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["keahlian"] . "</td>";
+            echo "<td>" . $row["presentase keahlian"] . "</td>";
+            echo "<td>" . $row["bahasa"] . "</td>";
+            echo "<td>" . $row["presentasebahasa"] . "</td>";
+            echo "</tr>";
+        }
+    } else {
+        echo "<tr><td colspan='3'>Tidak ada data ditemukan</td></tr>";
+    }
+    ?>
+    
+    </div>
+
+    
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pekerjaan</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>App Programer</b></h5>
+          <p>Saya bisa mendesign aplikasi dengan menggunakan Aplikasi visual studio 2022.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer </b></h5>
+          <p>Saya bisa membuat beberapa website sederhana contohnya website ini.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pendidikan</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SDN Kebon Baru 11</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2021</h6>
+          <p>Sekolah Dasar</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMPN 41 Jakarta</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2024</h6>
+          <p>Sekolah Menengah</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMKN 64 Jakarta</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2024 - 2027</h6>
+          <p>Software enginering school</p><br>
+        </div>
+      </div>
+
+
+    </div>
+    
+  
+  </div>
+  
+  
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Kunjungi Sosial Media Saya</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="#" target="_blank">Muhammad Subkha</a></p>
+</footer>
+
+</body>
+</html>
